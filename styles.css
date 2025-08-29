@@ -6,7 +6,15 @@
 body {
 	margin: 0;
 	padding: 0;
+	font-family: sans-serif;
 }
+
+footer {
+	position: absolute;
+	bottom: 0px;
+	color: white;
+}
+
 .main {
 	display: flex;
 	flex-direction: row;
@@ -19,7 +27,6 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: calc(100vw / 3);
-	font-family: odin-font, sans-serif;
 	display: flex;
 	justify-content: center;
 	position: relative;
@@ -32,6 +39,7 @@ body {
 }
 
 .banner {
+	font-family: odin-font, sans-serif;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -45,7 +53,7 @@ body {
 }
 
 .banner img {
-	width: 75px;
+	width: 50px;
 	height: auto;
 	margin: 8px;
 }
@@ -53,6 +61,11 @@ body {
 .banner > p {
 	margin: 0px;
 	color: white;
-	font-size: 64px;
+	font-size: clamp(2rem, 6vw, 4rem);
 	margin-right: 8px;
+}
+
+footer p {
+	margin: 8px;
+	font-size: 8px;
 }
